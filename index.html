@@ -29,32 +29,21 @@
             font-size: 2.5rem;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
         .image-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            width: 100%;
+            height: auto;
             margin: 20px 0;
         }
         .image-container img {
-            width: 48%;
+            width: 100%;
             height: auto;
-            border-radius: 10px;
         }
         .caption {
             text-align: center;
-            font-size: 1rem;
+            font-size: 0.8rem;
             margin-top: 10px;
             color: #444;
-            font-weight: bold;
+            font-weight: normal;
         }
         p {
             margin: 10px 0;
@@ -64,19 +53,18 @@
             text-align: center;
             margin-top: 20px;
             padding: 10px 0;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: white;
             background: #6a11cb;
             border-radius: 8px;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
         .author-initial {
-            font-size: 0.8rem;
+            font-size: 1rem;
             color: #666;
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
             font-style: italic;
+            text-align: right;
+            margin-top: 20px;
         }
         body.dark-mode {
             background-color: #121212;
@@ -88,7 +76,9 @@
         footer.dark-mode {
             background: #1e1e1e;
         }
-
+        .caption.dark-mode {
+            color: #fff;
+        }
         .toggle-btn, .share-btn {
             background-color: #2575fc;
             color: white;
@@ -102,56 +92,54 @@
         .toggle-btn:hover, .share-btn:hover {
             background-color: #6a11cb;
         }
-
         .share-btn {
             display: block;
             margin-top: 20px;
         }
-
     </style>
 </head>
 <body>
     <header>
         <h1>Antusiasme Tinggi! Pemilos SMAN 2 Bantul Sukses Dilaksanakan</h1>
     </header>
+    
     <div style="text-align: center;">
         <button class="toggle-btn" id="toggle-dark-mode">Aktifkan Dark Mode</button>
         <button class="share-btn" id="share-btn">Bagikan</button>
     </div>
 
-    <div class="container">
-        <div class="image-container">
-            <div>
-                <img src="tps001.jpg" alt="Suasana pemilihan di TPS 001">
-                <div class="caption">Suasana pemilihan di TPS 001: Antusiasme siswa dalam memberikan suara.</div>
-            </div>
-            <div>
-                <img src="tps002.jpg" alt="Suasana pemilihan di TPS 002">
-                <div class="caption">Suasana pemilihan di TPS 002: Pemungutan suara berjalan lancar dan tertib.</div>
-            </div>
-        </div>
-        <p>Bantul - Seluruh siswa SMAN 2 Bantul terlibat dalam pemilihan ketua dan wakil ketua OSIS periode 2024/2025, Senin (2/9/2024). Pemilihan ini dilaksanakan secara langsung di masing-masing tempat pemungutan suara (TPS) yang telah disediakan di area sekolah. Setiap siswa memberikan suaranya untuk memilih calon yang dianggap mampu memimpin dan mewakili suara mereka selama satu tahun ke depan.</p>
-
-        <p>Jumat (9/8/2024), SMAN 2 Bantul memulai rangkaian kegiatan pemilihan Ketua OSIS dengan mengadakan sosialisasi pemilu yang melibatkan Badan Pengawas Pemilu (Bawaslu). Kegiatan ini dihadiri oleh seluruh siswa kelas XII. Dalam acara ini, perwakilan Bawaslu memberikan penjelasan mendalam tentang pentingnya peran generasi muda dalam proses demokrasi. Sosialisasi ini juga menyoroti langkah-langkah pemilu yang bersih, transparan, dan adil. Selain itu, siswa diajak memahami pentingnya partisipasi dalam demokrasi, baik di tingkat sekolah maupun masyarakat. Kegiatan ini menjadi landasan awal bagi para siswa untuk aktif dalam rangkaian Pemilos, termasuk dalam memilih Ketua OSIS yang baru.</p>
-
-        <p>Panitia Pemilos yang terdiri dari 17 anggota bekerja intensif mempersiapkan seluruh kebutuhan Pemilos. Struktur panitia meliputi 3 anggota sebagai PPO, 7 anggota KPPS di TPS 001 (Aula Ir. Soekarno), dan 7 anggota KPPS di TPS 002 (Ruang Soedirman). Mereka memastikan kelancaran proses Pemilos, mulai dari pemilihan kandidat, persiapan kampanye antar paslon, hingga pengelolaan logistik surat suara. Menurut Nur Fadilah, salah satu anggota MPK, pembentukan panitia berjalan lancar tanpa kendala karena semua anggota diambil dari internal MPK (Majelis Perwakilan Kelas).</p>
-
-        <p>Tahap berikutnya, Jumat (23/8/2024), dilaksanakan debat calon ketua OSIS yang diadakan di Aula Ir. Soekarno. Debat ini diikuti oleh tiga pasangan kandidat, yaitu: <br> 
-        <ol>
-            <li>Anjab Habibullah & Khalila Aurelia Prabowo</li>
-            <li>Revano Safada Akasyah & Keysa Afrita Dewi</li>
-            <li>Saifudin Saleh & Aulia Fitri Jauhari</li>
-        </ol>
-        Debat berlangsung selama dua jam dengan suasana penuh semangat. Para kandidat memaparkan visi mereka, menjawab pertanyaan dari panelis, serta menanggapi opini dari audiens.</p>
-
-        <p>Visi dari masing-masing kandidat cukup beragam. Anjab dan Khalila fokus pada pengembangan solidaritas siswa dan peningkatan sopan santun. Revano dan Keysa menekankan OSIS sebagai wadah aspirasi siswa, sedangkan Saifudin dan Aulia mengedepankan peningkatan karakter siswa melalui kolaborasi dan prestasi.</p>
-
-        <div class="author-initial">-ff/kd/ny</div>
+    <div class="image-container">
+        <img src="tps001.jpg" alt="Suasana pemilihan di TPS 001">
+        <div class="caption">Suasana pemilihan di TPS 001: Antusiasme siswa dalam memberikan suara.</div>
     </div>
+
+    <p>Bantul - Seluruh siswa SMAN 2 Bantul terlibat dalam pemilihan ketua dan wakil ketua OSIS periode 2024/2025, Senin (2/9/2024). Pemilihan ini dilaksanakan secara langsung di masing-masing tempat pemungutan suara (TPS) yang telah disediakan di area sekolah. Setiap siswa memberikan suaranya untuk memilih calon yang dianggap mampu memimpin dan mewakili suara mereka selama satu tahun ke depan.</p>
+
+    <div class="image-container">
+        <img src="tps002.jpg" alt="Suasana pemilihan di TPS 002">
+        <div class="caption">Suasana pemilihan di TPS 002: Pemungutan suara berjalan lancar dan tertib.</div>
+    </div>
+
+    <p>Jumat (9/8/2024), SMAN 2 Bantul memulai rangkaian kegiatan pemilihan Ketua OSIS dengan mengadakan sosialisasi pemilu yang melibatkan Badan Pengawas Pemilu (Bawaslu). Kegiatan ini dihadiri oleh seluruh siswa kelas XII. Dalam acara ini, perwakilan Bawaslu memberikan penjelasan mendalam tentang pentingnya peran generasi muda dalam proses demokrasi. Sosialisasi ini juga menyoroti langkah-langkah pemilu yang bersih, transparan, dan adil. Selain itu, siswa diajak memahami pentingnya partisipasi dalam demokrasi, baik di tingkat sekolah maupun masyarakat. Kegiatan ini menjadi landasan awal bagi para siswa untuk aktif dalam rangkaian Pemilos, termasuk dalam memilih Ketua OSIS yang baru.</p>
+
+    <p>Panitia Pemilos yang terdiri dari 17 anggota bekerja intensif mempersiapkan seluruh kebutuhan Pemilos. Struktur panitia meliputi 3 anggota sebagai PPO, 7 anggota KPPS di TPS 001 (Aula Ir. Soekarno), dan 7 anggota KPPS di TPS 002 (Ruang Soedirman). Mereka memastikan kelancaran proses Pemilos, mulai dari pemilihan kandidat, persiapan kampanye antar paslon, hingga pengelolaan logistik surat suara. Menurut Nur Fadilah, salah satu anggota MPK, pembentukan panitia berjalan lancar tanpa kendala karena semua anggota diambil dari internal MPK (Majelis Perwakilan Kelas).</p>
+
+    <p>Tahap berikutnya, Jumat (23/8/2024), dilaksanakan debat calon ketua OSIS yang diadakan di Aula Ir. Soekarno. Debat ini diikuti oleh tiga pasangan kandidat, yaitu: <br> 
+    <ol>
+        <li>Anjab Habibullah & Khalila Aurelia Prabowo</li>
+        <li>Revano Safada Akasyah & Keysa Afrita Dewi</li>
+        <li>Saifudin Saleh & Aulia Fitri Jauhari</li>
+    </ol>
+    Debat berlangsung selama dua jam dengan suasana penuh semangat. Para kandidat memaparkan visi mereka, menjawab pertanyaan dari panelis, serta menanggapi opini dari audiens.</p>
+
+    <p>Visi dari masing-masing kandidat cukup beragam. Anjab dan Khalila fokus pada pengembangan solidaritas siswa dan peningkatan sopan santun. Revano dan Keysa menekankan OSIS sebagai wadah aspirasi siswa, sedangkan Saifudin dan Aulia mengedepankan peningkatan karakter siswa melalui kolaborasi dan prestasi.</p>
+
+    <div class="author-initial">-ff/kd/ny</div>
 
     <footer>
         © 2024 Pemilos SMAN 2 Bantul | Seluruh Hak Cipta Dilindungi
     </footer>
+
     <script>
         const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
         const shareButton = document.getElementById('share-btn');
