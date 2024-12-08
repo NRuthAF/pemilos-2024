@@ -18,17 +18,29 @@
             padding: 20px;
         }
         header {
-            text-align: center;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #444;
+            padding: 10px 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
+        }
+        .logokiri, .logokanan {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+            background-color: #333;
+            padding: 5px;
+            border-radius: 5px;
         }
         header h1 {
             font-size: 2rem;
+            color: white;
             text-align: center;
-            font-weight: bold;
+            flex-grow: 1;
         }
 
         h3 {
@@ -114,7 +126,13 @@
 </head>
 <body>
     <header>
+        <div class="logokiri">
+            <img src="logo.png" alt="Logo Studio" class="logo">
+        </div>
         <h1>TriniNews</h1>
+        <div class="logokanan">
+            <img src="logo-smadaba.png" alt="Logo Sekolah" class="logo">
+        </div>
     </header>
     
     <div style="text-align: center;">
